@@ -9,6 +9,7 @@ use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
@@ -28,7 +29,10 @@ class User implements UserInterface
      * @ORM\Column(type="string", length=180, unique=true)
      */
     private $email;
-
+    /**
+     * @ORM\Column(type="string", name="password", nullable=true)
+     */
+    private $password;
     /**
      * @ORM\Column(type="json")
      */
