@@ -1,8 +1,13 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-contact:
+index:
     path:       /{_locale}/home
     controller: App\Controller\HomeController::index
+    requirements:
+        _locale: en|fr|de
+admin:
+    path:       /{_locale}/admin
+    controller: App\Controller\Admin\DashboardController::index
     requirements:
         _locale: en|fr|de
