@@ -8,6 +8,6 @@ framework:
                 loco:
                     dsn: '%env(LOCO_DSN)%'
                     domains: ['messages']
-                    locales: [:at, :de, :ch_de, :ch_fr, :fr, :int_en, :int_fr]
+                    locales: [:de, :fr, :es ,en, :hr]
 #            lokalise:
 #                dsn: '%env(LOKALISE_DSN)%'

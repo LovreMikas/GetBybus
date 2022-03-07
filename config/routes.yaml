@@ -5,9 +5,9 @@ index:
     path:       /{_locale}/home
     controller: App\Controller\HomeController::index
     requirements:
-        _locale: en|fr|de
+        _locale: en|fr|de|es|hr
 admin:
     path:       /{_locale}/admin
     controller: App\Controller\Admin\DashboardController::index
     requirements:
-        _locale: en|fr|de
+        _locale: en|fr|de|es|hr
